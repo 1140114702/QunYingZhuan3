@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="8dp"
     tools:context="com.example.zyb.qunyingzhuan3.MainActivity">
@@ -19,10 +20,25 @@
         android:text="自定义TextView" />
 
     <com.example.zyb.qunyingzhuan3.TextView2
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textSize="30sp"
         android:layout_marginTop="8dp"
         android:text="动态效果的TextView" />
+
+
+    <com.example.zyb.qunyingzhuan3.MyToolBar
+        android:id="@+id/my_toolbar"
+        app:title="自定义ToolBar"
+        app:titleTextColor="@color/colorAccent"
+        app:leftBackground="@mipmap/ic_launcher"
+        app:leftText="左边"
+        app:leftTextColor="@color/colorAccent"
+        app:rightBackground="@mipmap/ic_launcher"
+        app:rightText="右边按钮"
+        app:rightTextColor="@color/colorAccent"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"/>
 
 </LinearLayout>
