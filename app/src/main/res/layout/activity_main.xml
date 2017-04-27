@@ -41,4 +41,9 @@
         android:layout_width="match_parent"
         android:layout_height="52dp"/>
 
+    <com.example.zyb.qunyingzhuan3.CircleProgressView
+        android:layout_marginTop="8dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
 </LinearLayout>
