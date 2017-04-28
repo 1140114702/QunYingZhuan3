@@ -1,8 +1,10 @@
 package com.example.zyb.qunyingzhuan3;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void rightOnClick() {
-               show("点击了右边按钮");
+                show("点击了右边按钮");
             }
         });
 
-        toolBar.setBtnVisibility(0,true);
-        toolBar.setBtnVisibility(1,false);
+        toolBar.setBtnVisibility(0, true);
+        toolBar.setBtnVisibility(1, false);
     }
 
     private void show(String makeText) {
@@ -40,8 +42,13 @@ public class MainActivity extends AppCompatActivity {
         if (toast != null) {
             toast.cancel();
         }
-        toast = Toast.makeText(this, makeText,Toast.LENGTH_SHORT);
+        toast = Toast.makeText(this, makeText, Toast.LENGTH_SHORT);
         toast.show();
+    }
+
+    public void scroll(View view) {
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
     }
 
 }
