@@ -5,14 +5,13 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.widget.Button;
 
 /**
  * 事件分发机制
  * Created by bin on 2017/4/29.
  */
 
-public class AView extends Button {
+public class AView extends android.support.v7.widget.AppCompatButton {
 
     private static final String TAG = "binbin";
 
