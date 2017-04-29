@@ -49,11 +49,18 @@
     <com.example.zyb.qunyingzhuan3.VolumeView
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="150dp" />
 
     <Button
         android:onClick="scroll"
         android:text="有黏性的scroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="touch"
+        android:text="事件分发机制"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

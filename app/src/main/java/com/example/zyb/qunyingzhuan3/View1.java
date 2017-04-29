@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 /**
@@ -87,7 +86,6 @@ public class View1 extends View {
         canvas.drawColor(ContextCompat.getColor(getContext(), R.color.colorAccent));
         int width = getWidth();
         int height = getHeight();
-        Log.e(TAG, "onDraw: "+width+"====="+height);
     }
 
 }

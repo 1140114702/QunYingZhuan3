@@ -51,4 +51,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void touch(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        startActivity(intent);
+    }
 }
